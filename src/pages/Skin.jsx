@@ -131,7 +131,6 @@ function Skin() {
     fontSize: '1.4rem',       // Larger font size
     maxWidth: '700px',        // Keeps the text from stretching too wide
     margin: '0 auto',
-    fontWeight: '300',
     color: 'black',
     fontWeight: 'bold'
   }}>
@@ -159,7 +158,7 @@ function Skin() {
             layers each of which is made up of more layers. The cells that make up 
             these layers work together allowing the skin to perform vital functions such as: <br />
 		<strong> regulating body temperature, feeling sensations, and managing moisture.</strong> <br />
-            <em > *Click and hold to orbit around the 3D model -> </em>
+            <em > *Click and hold to orbit around the 3D model --> </em>
           </p>
         </div>
 
