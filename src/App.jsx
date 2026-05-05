@@ -1,7 +1,18 @@
+
+
+
+
+
+
 import { Routes, Route, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { Canvas, useFrame } from '@react-three/fiber';
+import React, { useRef, useState } from 'react';
+import { OrbitControls, Edges } from '@react-three/drei';
+
 import Home from './pages/Home';
 import Blog from './pages/Blog';
+import Skin from './pages/Skin';
 
 function App() {
   return (
@@ -17,12 +28,17 @@ function App() {
           
           {/* Link to a different Route */}
           <Link to="/blog">Blog</Link>
+	 <Link to="/skin">Skin</Link>
         </div>
       </nav>
+
+
+
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+	<Route path="/skin" element={<Skin />} />
       </Routes>
     </div>
   );

@@ -125,7 +125,7 @@ body {
 .employee {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #0f3460, #16213e);
+  background: linear-gradient(360deg, #0f3460, #16213e);
   color: #9ce892;
 }
 
@@ -210,6 +210,9 @@ body {
    padding: 2px;
 }
 
-
+#about{
+	border: 2px solid black;
+	  width: 200vw;
+}
 
 
