@@ -17,7 +17,7 @@ import myImage3 from '../assets/picture3.png'; // 2. Import
 
 
 function Bottle(props) {
-  const { scene } = useGLTF('/modified_thermos_1k.gltf');
+  const { scene } = useGLTF('/my-portfolio/modified_thermos_1k.gltf');
   
   // 1. Use useMemo and .clone() to create a unique copy for EACH bottle
   const clonedScene = React.useMemo(() => scene.clone(), [scene]);
