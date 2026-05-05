@@ -80,7 +80,7 @@ function Box({ position, size = [1, 1, 1], color = "orange", labelOffset = [1.9,
 This function is called to create a 3D skin model 
 **************************************************************/}
 function SkinModel(props) {
-  const { scene } = useGLTF('/my-portfolio/anatomy_of_the_skin.glb');
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}anatomy_of_the_skin.glb`);
   return <primitive object={scene} {...props} />;
 }
 
