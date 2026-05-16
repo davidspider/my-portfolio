@@ -40,6 +40,8 @@ function Bottle(props) {
     />
   );
 }
+
+
 function Box({ position, labelOffset = [1.9, 1.9, 0], title = "The Cube", description = "A 3D solid object.", ...props }) {
   const meshRef = useRef();
   const [hovered, setHover] = useState(false);
@@ -138,7 +140,7 @@ function Home() {
       <section className="employee">
         <h1> <em>Hello!</em> I’m David Flores</h1>
         <p>I build websites that collect data that is used to train machine learning models 
-	that are deployed to help website users. </p>
+	that help website users. </p>
       </section>
 
 
@@ -160,24 +162,30 @@ function Home() {
   <Box 
     position={[-4, 0, 0]} 
     labelOffset={[-1.5, 1.8, 0]} 
-    title="Data Capture" // <-- CHANGE THIS TITLE
-    description="I build systems that collect raw data for processing." // <-- CHANGE THIS TEXT
+    title="Education" // 
+    description="I studied Computer science at CSUSM. I completed course work
+		in computer hardware and architecture, networking, and 
+		full stack development." 
   />
 
   {/* SECOND BOX */}
   <Box 
     position={[0, 0, 0]} 
     labelOffset={[0, 2.2, 0]} 
-    title="Machine Learning" // <-- CHANGE THIS TITLE
-    description="Training neural networks to solve user problems." // <-- CHANGE THIS TEXT
+    title="Work Experience"
+    description="I have begun working on a project that 
+		uses machine learning to predict the cost of
+		a landscape project based off location, site conditions, 
+		materials, and dimentions. "
   />
 
   {/* THIRD BOX */}
   <Box 
     position={[4, 0, 0]} 
     labelOffset={[1.5, 1.8, 0]} 
-    title="Web Deployment" // <-- CHANGE THIS TITLE
-    description="Scaling apps to reach thousands of users worldwide." // <-- CHANGE THIS TEXT
+    title="Hobbies" 
+    description="I design build animatronics characters
+		that have moving arms, moving mouths, and blinking eyes."
   />
 
 
@@ -185,8 +193,9 @@ function Home() {
   <Box 
     position={[8, 0, 0]} 
     labelOffset={[1.5, 1.8, 0]} 
-    title="Web Deployment" // <-- CHANGE THIS TITLE
-    description="Scaling apps to reach thousands of users worldwide." // <-- CHANGE THIS TEXT
+    title="Sports" // <-- CHANGE THIS TITLE
+    description="I enjoy playing soccer and throwing karate kicks. 
+		I also enjoy sumo wrestling." 
   />
 
 </Suspense>

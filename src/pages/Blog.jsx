@@ -17,12 +17,6 @@ import texasImg2 from '../assets/picture5.png';
 import carlsbadImg3 from '../assets/picture6.png';
 
 
-// Reuse your SkinModel component (ensure it's in the same file or imported)
-function SkinModel(props) {
-  const { scene } = useGLTF('/anatomy_of_the_skin.glb');
-  return <primitive object={scene} {...props} />;
-}
-
 
 function Blog() {
   return (
